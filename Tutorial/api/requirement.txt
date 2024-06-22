@@ -1,0 +1,9 @@
+python-dotenv
+langchain
+langchain-google-genai 
+langchain-experimental
+fastapi
+uvicorn
+langchain-community
+langserve
+sse_starlette
