@@ -1,702 +1,560 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Chinmay Pisal </title>
-  <link rel="icon" type="image/x-icon" href="img/main_logo.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <script src='https://code.jquery.com/jquery-1.12.0.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
-  <link href="style.css" rel="stylesheet">
-  <script src="carousel.js"></script>
-  <script type="text/javascript" src="./dist/TagCloud.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinmay Pisal - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="cursor-dot-outline"></div>
-  <div class="cursor-dot"></div>
+    <div id="particles-js"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="/* From https://css.glass */
-  background: rgba(255, 255, 255, 0.32);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7.8px);
-  -webkit-backdrop-filter: blur(7.8px);">
-    <div class="container" style="min-width: 85vw;">
-      <a class="navbar-brand" href="#"><i class="bi-lightning-charge"></i> CHINMAY PISAL</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#testimonials">Certifications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <a target='_blank' href='https://github.com/chinmay404' class='cutom_button' style="color: #fff;
-        background-color: #272727;
-        border-color: #000000;"><i class="bi-github"></i> Github</a>
-        <!-- <a  target='_blank' href='https://calendly.com/morganjlopes/call' class='cutom_button'><i class="bi-calendar-event"></i> Schedule a Call</a> -->
-        <!-- <a href='#' class='cutom_button'><i class="bi-download"></i> Download Resume</a> -->
-        <!-- <a href='mailto:' class='cutom_button'><i class="bi-envelope"></i> Send Email</a> -->
-      </div>
-    </div>
-  </nav>
-
-  <header class='text-center p-section'>
-    <div class='container-fluid'>
-      <div class="shape-blob"></div>
-      <div class="shape-blob one"></div>
-      <div class="shape-blob two"></div>
-      <div class='row'>
-        <div class='col-md-6 offset-md-3'>
-          <sup>About Me</sup>
-          <h1 style="margin: revert; font-size: 4.5rem;">Chinmay Pisal</h1>
-          <p class='lead mb-5' style="margin-top: 5rem; margin-bottom: 5rem;">Enthusiastic Computer Science graduate
-            preparing for Master's, adept in web development, AI, and ML. Spearheaded innovative projects combatting
-            theft, showcasing expertise in Django, Selenium, and AWS. Eager to drive impactful advancements, passionate
-            about contributing to cutting-edge solutions in technology.
-          </p>
-
-          <a target='_blank' href='https://www.linkedin.com/in/chinmay-pisal/' class='cutom_button'><i
-              class="bi-linkedin"></i> Connect on Linkedin</a>
-          <!-- <a  target='_blank' href='https://calendly.com/morganjlopes/call' class='cutom_button'><i class="bi-calendar-event"></i> Schedule a Call</a> -->
-          <a href='mailto:chinmaypisal45@gmail.com' class='cutom_button'><i class="bi-envelope"></i> Send Email</a>
-          <a href='resume.pdf' class='cutom_button'><i class="bi-download"></i> Download Resume</a>
+    <header style="background-color: rgb(255 255 255 / 0%);">
+        <div class="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle">
+            <!-- <i class="fas fa-moon"></i> -->
         </div>
-      </div>
-    </div>
-  </header>
-
-  <section id='company' class='p-section'>
-    <div class='container text-center'>
-      <label class='sup mb-3 text-muted'>At</label>
-
-      <div class='row justify-content-center d-flex align-items-center'>
-        <div class="iasdm" style="display: flex;
-          justify-content: space-evenly;
-          align-items: center;">
-          <div class='col-2'>
-            <img src="img/DY_logo.jpeg" class='img-flu' style='max-width: 300px;'>
-          </div>
-          <div class='col-2'>
-            <img src="img/Zanvar_group_logo.webp" class='img-flui' style='max-width: 300px;'>
-          </div>
-          <div class='col-2'>
-            <img src="img/ue-icon.png" class='img-flui' style='min-width: 174px;'>
-          </div>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
         </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
+    <section id="home" class="hero">
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='rainbow'></div>
+        <div class='h'></div>
+        <div class='v'></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Hello, I'm <span class="highlight">Chinmay Pisal</span></h1>
+            <div class="typewriter">
+                <span id="typed"></span>
+            </div>
+            <p>Based in Berlin, Germany</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn primary-btn">Get In Touch</a>
+                <a href="resume.pdf" class="btn secondary-btn" id="download-cv">Download CV</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/chinmay-pisal/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/chinmay404" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:chinmaypisal1718@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-  <section id='portfolio' class='p-section bg-light'>
-    <div class='container' style="min-width: 85vw;">
-      <center>
-        <sup>Portfolio</sup>
-        <h2 class='mb-5 underline'>Featured Work</h2>
-      </center>
-      <center>
-        <div class="container-fluid" style="min-width: 70vw; margin-bottom: 70px;">
-          <div class="row">
-            <div class="col-md-12">
-              <div id="news-slider" class="owl-carousel">
-                <div class="post-slide">
-                  <div class="post-img">
-                    <img src=" img/automate_e-invoice.png" alt="">
-                    <a href="https://github.com/chinmay404/Automate_website-Zanver_group" class="over-layer"><i
-                        class="fa fa-link"></i></a>
-                  </div>
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <a href="https://github.com/chinmay404/elevare">Elevare (AI email
-                        Client)</a>
-                    </h3>
-                    <p class="post-description">web-based solution to streamline email management using advanced
-                      language models. This system automates summarization, generates intelligent replies, and
-                      categorizes emails to improve user efficiency. The platform integrates custom knowledge sources
-                      for personalized responses and supports global communication through bidirectional translation.
-                    </p>
-                    </p>
-                    <div class='card-footer'>
-                      <a href='https://github.com/chinmay404/Automate_website-Zanver_group'
-                        class='btn btn-sm btn-light'><i class="bi-github"></i> Code</a>
-                      <!-- <a href='#' class='btn btn-sm btn-light'><i class="bi-power"></i> Demo</a> -->
-                      <a href='https://www.linkedin.com/posts/chinmay-pisal_github-chinmay404automatewebsite-zanvergroup-activity-7184934634600685568-NGyD?utm_source=share&utm_medium=member_desktop'
-                        class='btn btn-sm btn-primary float-end'><i class="bi-play-fill"></i> Watch</a>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-img" data-aos="fade-right" data-aos-delay="200">
+                    <div class="img-container">
+                        <img src="./src/Profile_pic.jpg" alt="Chinmay Pisal">
+                        <div class="img-overlay"></div>
                     </div>
-                  </div>
                 </div>
-                <div class="post-slide">
-                  <div class="post-img">
-                    <img src=" img/automate_e-invoice.png" alt="">
-                    <a href="https://github.com/chinmay404/Automate_website-Zanver_group" class="over-layer"><i
-                        class="fa fa-link"></i></a>
-                  </div>
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <a href="https://github.com/chinmay404/Automate_website-Zanver_group">Automated e-invoice
-                        system</a>
-                    </h3>
-                    <p class="post-description">Django web application that automates website interactions using
-                      Selenium.
-                      The application
-                      was developed for Zanwar Industry to
-                      streamline repetitive tasks and increase efficiency in website operations with Django web app for
-                      Zanwar
-                      Industry automates
-                      website tasks with Selenium, streamlining operations and boosting efficiency.an automated bot.</p>
-                    </p>
-                    <div class='card-footer'>
-                      <a href='https://github.com/chinmay404/Automate_website-Zanver_group'
-                        class='btn btn-sm btn-light'><i class="bi-github"></i> Code</a>
-                      <!-- <a href='#' class='btn btn-sm btn-light'><i class="bi-power"></i> Demo</a> -->
-                      <a href='https://www.linkedin.com/posts/chinmay-pisal_github-chinmay404automatewebsite-zanvergroup-activity-7184934634600685568-NGyD?utm_source=share&utm_medium=member_desktop'
-                        class='btn btn-sm btn-primary float-end'><i class="bi-play-fill"></i> Watch</a>
+                <div class="about-text" data-aos="fade-left" data-aos-delay="300">
+                    <h3>Software Engineer & AI Enthusiast</h3>
+                    <p>Driven by a passion for innovation, I thrive on developing new ideas and turning them into
+                        reality through hard work and collaboration. With a deep interest in AI-driven technologies, I
+                        am constantly learning and adapting to advancements in Generative AI, and cloud computing.</p>
+                    <p>Skilled in creating innovative solutions and automating workflows, I aim to enhance efficiency
+                        through intelligent systems. Eager to contribute to groundbreaking AI projects, I strive to push
+                        the boundaries of technology alongside talented team members.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-title">Name:</span>
+                            <span class="info-value">Chinmay Pisal</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value">chinmaypisal1718@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Phone:</span>
+                            <span class="info-value">+49 15510 826076</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Location:</span>
+                            <span class="info-value">Spandau, Berlin, Germany</span>
+                        </div>
                     </div>
-                  </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="post-slide">
-                  <div class="post-img">
-                    <img src=" img/tool_tracking.png" alt="">
-                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                  </div>
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <a href="#">Tool Tracking System (Anti Theft)</a>
-                    </h3>
-                    <p class="post-description">Django web application that automates website interactions using
-                      Selenium.
-                      The primary objective of the system was to combat theft and improve product security. By
-                      meticulously tracking each product, the
-                      organization was able to successfully reduce losses caused by theft by 90%. This initiative
-                      significantly enhanced the security and
-                      profitability of the organization, allowing them to continuously monitor expensive tools.</p>
-                    </p>
-                    <div class='card-footer'>
-                      <!-- <a href='#' class='btn btn-sm btn-light'><i class="bi-github"></i> Code</a> -->
-                      <a href='https://www.linkedin.com/posts/chinmay-pisal_tooltrackingsystem-securitytechnology-supplychainmanagement-activity-7186762766395850752-SdLO?utm_source=share&utm_medium=member_desktop'
-                        class='btn btn-sm btn-primary float-end'><i class="bi-play-fill"></i> Watch</a>
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Experience & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
-                  </div>
+                    <div class="timeline-content">
+                        <h3>Masters - Software Engineering</h3>
+                        <h4>University of Europe (UE), Spandau, Berlin</h4>
+                        <p class="timeline-date">Sep 2024 - Mar 2026</p>
+                    </div>
                 </div>
-
-                <div class="post-slide">
-                  <div class="post-img">
-                    <img src="img/machine_code_optimiser.png" alt="">
-                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                  </div>
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <a href="#">Machine Code Optimizer</a>
-                    </h3>
-                    <p class="post-description">Machine Code Optimizer is a Streamlit web application that utilizes
-                      language models to optimize machine code. This tool allows
-                      users to upload machine code files, specify a machine name, and receive optimized code as well as
-                      cycle time analysis.</p>
-                    </p>
-                    <div class='card-footer'>
-                      <a href='https://github.com/chinmay404/Machine-Code-Optimiser' class='btn btn-sm btn-light'><i
-                          class="bi-github"></i> Code</a>
-                      <!-- <a href='#' class='btn btn-sm btn-light'><i class="bi-power"></i> Demo</a> -->
-                      <a href='#' class='btn btn-sm btn-primary float-end'><i class="bi-play-fill"></i> Watch</a>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
                     </div>
-                  </div>
+                    <div class="timeline-content">
+                        <h3>Intern</h3>
+                        <h4>Zanwar Group of Industries, Kolhapur</h4>
+                        <p class="timeline-date">Nov 2023 - May 2024</p>
+                        <ul>
+                            <li>Spearheaded the development of the Tool Tracking System, leading a dynamic team of 3
+                                developers.</li>
+                            <li>Innovatively designed and implemented a comprehensive tracking solution to combat theft
+                                and enhance product security.</li>
+                            <li>Continuously monitoring and tracking high-value tools, resulting in a substantial
+                                reduction in losses due to theft.</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="post-slide">
-                  <div class="post-img">
-                    <img src=" img/social_media_control.png" alt="">
-                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                  </div>
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <a href="#">Social Media Access Control</a>
-                    </h3>
-                    <p class="post-description">Django web application that automates website interactions using
-                      Selenium.
-                      The application
-                      was developed for Zanwar Industry to
-                      streamline repetitive tasks and increase efficiency in website operations with Django web app for
-                      Zanwar
-                      Industry automates
-                      website tasks with Selenium, streamlining operations and boosting efficiency.an automated bot.</p>
-                    </p>
-                    <div class='card-footer'>
-                      <a href='https://github.com/chinmay404/Social_Media_Control' class='btn btn-sm btn-light'><i
-                          class="bi-github"></i> Code</a>
-
-                      <a href='https://www.linkedin.com/posts/chinmay-pisal_github-chinmay404socialmediacontrol-activity-7184931908277989377-AvSa?utm_source=share&utm_medium=member_desktop'
-                        class='btn btn-sm btn-primary float-end'><i class="bi-play-fill"></i> Watch</a>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
-                  </div>
+                    <div class="timeline-content">
+                        <h3>B.Tech - Computer Science</h3>
+                        <h4>D. Y. Patil College of Engineering Technology, Kolhapur, India</h4>
+                        <p class="timeline-date">June 2020 - June 2024</p>
+                        <p>CGPA: 7.2</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Intern</h3>
+                        <h4>Igap Technologies, Kolhapur, India</h4>
+                        <p class="timeline-date">Sep 2022 - Dec 2022</p>
+                        <ul>
+                            <li>Engaged in an intensive AI-ML internship, gaining hands-on experience in machine
+                                learning algorithms.</li>
+                            <li>Contributed to the development of a car price prediction system, collaborating closely
+                                with a team.</li>
+                            <li>Acquired practical knowledge in implementing machine learning models, data analysis, and
+                                model evaluation.</li>
+                            <li>Demonstrated strong problem-solving skills by addressing challenges during the
+                                development and testing phase.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-img">
+                                <img src="./src/elevare.png" alt="Elevare">
+                            </div>
+                            <h3>Elevare (AI Email Client)</h3>
+                            <div class="project-tags">
+                                <span>LLM</span>
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>Next.js</span>
+                            </div>
+                            <div class="project-card-back">
+                                email management using advanced Large Language Models (LLMs). Automated summarization,
+                                generated intelligent replies, and categorized emails to enhance user efficiency.
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Elevare (AI Email Client)</h3>
+                            <p>Developed a web-based solution to streamline email management using advanced Large
+                                Language Models (LLMs). Automated summarization, generated intelligent replies, and
+                                categorized emails to enhance user efficiency.</p>
+                            <ul>
+                                <li>Integrated custom knowledge sources for personalized responses using RAG</li>
+                                <li>Implemented AI-driven email summarization and auto-drafted responses</li>
+                                <li>Reduced manual reply time and improved productivity</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/chinmay404/elevare" target="_blank"><i
+                                        class="fab fa-github"></i> GitHub</a>
+                                <a href="https://www.linkedin.com/posts/chinmay-pisal_elevare-an-ai-powered-email-client-activity-7268251447094358017-fL4_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPpjowBaduBlDHJLK_O5jcaI6_zENXYuY4"
+                                    target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Post</a>
+                                <a href="https://www.youtube.com/watch?v=RdNlkK7dfYU" target="_blank"><i
+                                        class="fab fa-youtube"></i> Youtube</a>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="post-slide">
-                  <div class="post-img">
-                    <img src=" img/ards_data_collection.png" alt="">
-                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                  </div>
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <a href="https://github.com/chinmay404/cards_data_collection">AI Visiting Cards Data Collector</a>
-                    </h3>
-                    <p class="post-description">Simplifying Business Card Management with AI. With Langcahin and Google
-                      Gemini Model.
-                      Simply upload images of the front and back of your business cards, and let our AI Recognition
-                      Model do the rest. VisiData extracts essential data and seamlessly integrates it into your
-                      database, saving you time and effort.
-                    </p>
-                    </p>
-                    <div class='card-footer'>
-                      <a href='https://github.com/chinmay404/cards_data_collection' class='btn btn-sm btn-light'><i
-                          class="bi-github"></i> Code</a>
-                      <!-- <a href='#' class='btn btn-sm btn-light'><i class="bi-power"></i> Demo</a> -->
-                      <a href='https://www.linkedin.com/posts/chinmay-pisal_github-chinmay404cardsdatacollection-activity-7184933284533944320-jVKa?utm_source=share&utm_medium=member_desktop'
-                        class='btn btn-sm btn-primary float-end'><i class="bi-play-fill"></i> Watch</a>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-img">
+                                <img src="./src/white_deep_seek.png" alt="Fine Tuning LLM">
+                            </div>
+                            <h3>Fine Tuning LLM (DeepSeek-R1)</h3>
+                            <div class="project-tags">
+                                <span>LLM</span>
+                                <span>RAG</span>
+                                <span>LoRa</span>
+                                <span>LangChain</span>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Fine Tuning LLM (DeepSeek-R1)</h3>
+                            <p>A comprehensive LLM fine-tuning project with synthetic data generation.</p>
+                            <ul>
+                                <li>Document scraper that extracts text from structured documentation</li>
+                                <li>Synthetic question generator for high-quality training data</li>
+                                <li>Synthetic answer generator using Retrieval-Augmented Generation (RAG)</li>
+                                <li>Fine-tuning pipeline using LoRA to efficiently adapt LLMs to new domains</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#" target="_blank"><i class="fab fa-huggingface"></i> Huggingface</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
 
-                <div class="post-slide">
-                  <div class="post-img">
-                    <img
-                      src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501"
-                      alt="">
-                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                  </div>
-                  <div class="post-content">
-                    <h3 class="post-title">
-                      <a
-                        href="https://github.com/chinmay404/Video-conferencing-using-Node-js">Video-conferencing-using-Node-js</a>
-                    </h3>
-                    <p class="post-description">This project is a web application built with Node.js and WebRTC that
-                      allows users to have video conferences with each other. The application uses the PeerJS library to
-                      establish peer-to-peer connections between users, and the Simple-Peer library to handle WebRTC
-                      signaling.
-
-                      To use this application, simply navigate to the URL where the application is hosted in your web
-                      browser. You will be prompted to enter a room name, and once you enter the room name, you will be
-                      connected to the video conference.
-
-                    </p>
-                    </p>
-                    <div class='card-footer'>
-                      <a href='https://github.com/chinmay404/Video-conferencing-using-Node-js'
-                        class='btn btn-sm btn-light'><i class="bi-github"></i> Code</a>
-                      <!-- <a href='#' class='btn btn-sm btn-light'><i class="bi-power"></i> Demo</a> -->
-                      <!-- <a href='#' class='btn btn-sm btn-primary float-end'><i class="bi-play-fill"></i> Watch</a> -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-img">
+                                <img src="./src/tool_tracking.png" alt="Tool Tracking System">
+                            </div>
+                            <h3>Tool Tracking System (Anti Theft)</h3>
+                            <div class="project-tags">
+                                <span>Django</span>
+                                <span>PostgreSQL</span>
+                                <span>REST API</span>
+                                <span>CI/CD</span>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Tool Tracking System (Anti Theft)</h3>
+                            <p>The primary objective of the system was to combat theft and improve product security.</p>
+                            <ul>
+                                <li>Reduced theft losses by 90%</li>
+                                <li>Continuous monitoring of expensive tools</li>
+                                <li>Enhanced security and profitability of the organization</li>
+                                <li>Successfully tracked each product to prevent losses</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="   " target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://www.linkedin.com/posts/chinmay-pisal_tooltrackingsystem-securitytechnology-supplychainmanagement-activity-7186762766395850752-SdLO?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPpjowBaduBlDHJLK_O5jcaI6_zENXYuY4"
+                                    target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Post</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-img">
+                                <img src="https://via.placeholder.com/600x400" alt="Behalf">
+                            </div>
+                            <h3>Behalf (LLM Agent)</h3>
+                            <div class="project-tags">
+                                <span>crewAI</span>
+                                <span>RAG</span>
+                                <span>LLM</span>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Behalf (LLM Agent)</h3>
+                            <p>LLM agent for multilingual communication and negotiation automation.</p>
+                            <ul>
+                                <li>Used Crew AI, LangChain, OpenAI Whisper, Eleven Labs TTS, and DeepSeek LLM</li>
+                                <li>Enabled real-time language translation, negotiation, and task completion</li>
+                                <li>Engineered a system for natural cross-language interactions</li>
+                                <li>Supports business and personal scenarios</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/chinmay404/Behalf" target="_blank"><i
+                                        class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </center>
+    </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Skills & Certifications</h2>
+                <div class="skills-content">
+                    <div class="skills-left" data-aos="fade-right" data-aos-delay="200">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">C/C++</span>
+                                <span class="skill-tag">SQL (Postgres)</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">HTML/CSS</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Frameworks</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Langchain</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Flask</span>
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">FastAPI</span>
+                                <span class="skill-tag">Selenium</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Tools</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Google Cloud Platform</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">VS Code</span>
+                                <span class="skill-tag">PyCharm</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Soft Skills</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Problem-Solving</span>
+                                <span class="skill-tag">Creative Thinking</span>
+                                <span class="skill-tag">Photography</span>
+                                <span class="skill-tag">Meditation</span>
+                                <span class="skill-tag">Travel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-right" data-aos="fade-left" data-aos-delay="300">
+                        <h3>Certifications</h3>
+                        <div class="certifications">
+                            <div class="certification-item">
+                                <div class="certification-icon">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <div class="certification-info">
+                                    <h4>AWS Academy Graduate - Cloud Architecting</h4>
+                                    <p>AWS</p>
+                                    <a href="#" target="_blank" class="cert-link">View Certificate <i
+                                            class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="certification-item">
+                                <div class="certification-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="certification-info">
+                                    <h4>Cybersecurity Internship - Palo Alto (Virtual)</h4>
+                                    <p>Palo Alto Networks</p>
+                                    <a href="#" target="_blank" class="cert-link">View Certificate <i
+                                            class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="certification-item">
+                                <div class="certification-icon">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <div class="certification-info">
+                                    <h4>AWS Academy Graduate - Cloud Foundations</h4>
+                                    <p>AWS</p>
+                                    <a href="#" target="_blank" class="cert-link">View Certificate <i
+                                            class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="certification-item">
+                                <div class="certification-icon">
+                                    <i class="fab fa-ibm"></i>
+                                </div>
+                                <div class="certification-info">
+                                    <h4>Cybersecurity Fundamentals</h4>
+                                    <p>IBM SkillsBuild</p>
+                                    <a href="#" target="_blank" class="cert-link">View Certificate <i
+                                            class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="awards">
+                            <h3>Awards</h3>
+                            <div class="award-item">
+                                <div class="award-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="award-info">
+                                    <h4>Winner Rational Programming Contest</h4>
+                                    <p>Google Developer Student Club DYPCET • 2023</p>
+                                    <a href="#" target="_blank" class="award-link">View Award <i
+                                            class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div >
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <!-- <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(162,210,255,0.7)" /> -->
+                <!-- <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(81,165,196,0.5)" /> -->
+                <!-- <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(30,96,145,0.3)" /> -->
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(162,210,255,0.7)" />
+            </g>
+        </svg>
+
+ 
+    <section id="contact" class="contact" style="background-color: rgba(162,210,255,0.7);">
+        <div class="container" >
+            
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Spandau, Berlin, Germany</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>chinmaypisal1718@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+49 15510 826076</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>Social Profiles</h3>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="300">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Chinmay Pisal. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
     </div>
-  </section>
-  <section style="margin: auto; min-height: 70vh;">
-    <div class='row' style="display: flex;justify-content: space-around;align-items: center; margin-top: 10vh ;">
-      <div class='col-sm-5'>
-        <h3 class='pt-3' style="padding-top: 50px; font-size: 50px;padding-bottom: 50px;">Other Skills and Interest</h3>
-        <p class='pb-3 lead'>I thrive on embracing new tech and staying updated on global developments. Eager to
-          learn, I dive into emerging trends and diverse skill sets. Beyond tech, I'm deeply engaged in global
-          affairs, sustainability, and diverse cultures.With a passion for learning and diverse experiences, i have
-          learnt skills like :</p>
 
-        <ul class='lead'>
-          <li>Linux / Unix</li>
-          <li>cyber Security</li>
-          <li>Dev Ops</li>
-          <li>Genrative AI</li>
-          <li>Server Side</li>
-        </ul>
-      </div>
-      <div class="tag_cloud"></div>
-    </div>
-  </section>
-  <center>
-    <hr style="max-width: 40vw;">
-  </center>
-
-
-
-
-
-  <section id='about' class='p-section'>
-    <div class='container container-lg'>
-      <sup> </sup>
-      <h2 class='mb-5 underline'>I am Chinmay Pisal</h2>
-
-      <div class='row flex-row'>
-        <div class='col-sm-4'>
-          <div class='p-3 sticky-top' style='top: 85px;'>
-            <img src="img/user_temp_image.png" class='circle mb-3'>
-
-
-          </div>
-        </div>
-        <div class='col-sm-8'>
-          <blockquote>Actively writing code and building high-End Products.</blockquote>
-
-          <img src="img/github-activity.png" class='mb-3'>
-
-          <p class='lead'>Dynamic and visionary Computer Science enthusiast, Chinmay Pisal, thrives on the intersection
-            of innovation and technology. With a relentless pursuit of excellence, Chinmay's journey in the realm of
-            computer science is marked by a series of impactful projects and a commitment to pushing the boundaries of
-            what's possible.
-          </p>
-          <p class='lead'>
-            As a forward-thinker, Chinmay brings a unique blend of technical expertise and creative problem-solving to
-            the table. His passion for crafting cutting-edge solutions is evident in his track record of developing web
-            applications and AI-powered systems that drive efficiency and optimize processes.</p>
-
-          <p class='lead mb-0'>Favorite Tools:</p>
-
-          <ul class='lead'>
-            <li><span class='marker-highlight'>Django</span></li>
-            <li>Selenium</li>
-            <li>Langchain</li>
-            <li>Rest API</li>
-            <li>AWS</li>
-          </ul>
-
-          <div class='mt-5'>
-            <a target='_blank' href='https://www.linkedin.com/in/chinmay-pisal-8b8816203/' class='cutom_button'><i
-                class="bi-linkedin"></i> Connect on Linkedin</a>
-            <!-- <a  target='_blank' href='https://calendly.com/morganjlopes/call' class='cutom_button'><i class="bi-calendar-event"></i> Schedule a Call</a> -->
-            <!-- <a href='#' class='cutom_button'><i class="bi-download"></i> Download Resume</a> -->
-            <!-- <a href='mailto:' class='cutom_button'><i class="bi-envelope"></i> Send Email</a> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id='testimonials' class='p-section'>
-    <div class='container'>
-      <sup>Certifications / Achivements</sup>
-      <h2 class='mb-5 underline'>Milestones on my way to learning <br>new skills</h2>
-
-      <div class='row'>
-        <div class='col-sm-4'>
-          <div class='p-3'>
-            <div class=''>
-              <blockquote class='quotation'><span class='marker-highlight'>First prize </span> Rational Programming
-                Contest</span></blockquote>
-              <p class='lead'>Securing the first prize in the competition held by the Google Developer Student Club
-                DYPCET in October 2022 is an absolute honor.
-                <a
-                  href="https://www.linkedin.com/posts/chinmay-pisal_pdf-activity-7081988791644635136-s2JF?utm_source=share&utm_medium=member_desktop">Link</a>
-              </p>
-            </div>
-            <div class=''>
-              <img src="img/gdsc-logo.png" class='circle testimonial-image'>
-              <h3 class='pt-3'>Google Developer
-                Student Club</h3>
-              <em>DYPCET , Kolhapur</a></em>
-            </div>
-          </div>
-        </div>
-
-        <div class='col-sm-4'>
-          <div class='p-3'>
-            <div class=''>
-              <blockquote class='quotation'>AWS Academy Cloud Architecting</blockquote>
-              <p class='lead'>Proud graduate of AWS Academy Cloud Architecting course. Skilled in designing scalable
-                cloud solutions. Ready to contribute to innovative projects.
-                <a
-                  href="https://www.linkedin.com/posts/chinmay-pisal_aws-activity-6988878662838194178-kWk6?utm_source=share&utm_medium=member_desktop">Link</a>
-              </p>
-            </div>
-            <div class=''>
-              <img src="img/aws.png" class='circle testimonial-image'>
-              <h3 class='pt-3'>Amazon Web Services</h3>
-              <em>AWS Training and Certification</em>
-            </div>
-          </div>
-        </div>
-
-        <div class='col-sm-4'>
-          <div class='p-3'>
-            <div class=''>
-              <blockquote class='quotation'>Cybersecurity Fundamentals</blockquote>
-              <p class='lead'>This includes cyber threat groups, types of attacks, social engineering, case studies,
-                overall security strategies, cryptography, and common approaches that organizations take to prevent,
-                detect, and respond to cyber attack. <a
-                  href="https://www.linkedin.com/posts/chinmay-pisal_cybersecurity-fundamentals-was-issued-by-activity-7081117959745585152-0p79?utm_source=share&utm_medium=member_desktop">
-                  Link</a>
-              </p>
-            </div>
-            <div class=''>
-              <img src="img/IBM.png" class='circle testimonial-image'>
-              <h3 class='pt-3'>IBM</h3>
-              <em>IBM SkillsBuild</em>
-            </div>
-          </div>
-        </div>
-      </div>
-      <center>
-        <p class='lead'>
-        <blockquote class='quotation'><span class='marker-highlight'> <a
-              href="https://www.linkedin.com/in/chinmay-pisal/"
-              style="text-decoration: none; color: black ; font-size: 20px;">More</a></p>
-        </blockquote>
-      </center>
-
-    </div>
-  </section>
-
-  <section id='contact' class='p-section-lg bg-dark text-white'>
-    <div class='container container-lg text-center'>
-
-      <sup>Contact</sup>
-      <h2 class='mb-5'>Let's Connect</h2>
-
-      <p class='w-sm ms-auto me-auto lead'>I'd love to hear from you! Whether you have a project in mind, want to
-        collaborate, or just want to say hello, feel free to reach out. Let's connect and bring your ideas to life!
-      <p class='w-sm ms-auto me-auto lead'>
-        You can reach me through the contact form below or connect with me on social media. Let's start a conversation
-        and explore how we can work together to create something amazing.</p>
-      <p class='w-sm ms-auto me-auto lead'>
-        Looking forward to hearing from you!</p>
-
-
-      <div class='mt-5'>
-        <ul class='icons'>
-          <li class='list-inline-item h4 mb-0 me-3'>
-            <a href='https://www.linkedin.com/in/chinmay-pisal/' target='_blank' class='text-light'>
-              <i class="bi-linkedin"></i>
-            </a>
-          </li>
-          <li class='list-inline-item h4 mb-0 me-3'>
-            <a href='https://github.com/chinmay404' target='_blank' class='text-light'>
-              <i class="bi-github"></i>
-            </a>
-          </li>
-          <li class='list-inline-item h4 mb-0 me-3'>
-            <a href='https://www.instagram.com/chinmay._.404/' target='_blank' class='text-light'>
-              <i class="bi-instagram"></i>
-            </a>
-          </li>
-          <li class='list-inline-item h4 mb-0 me-3'>
-            <a href='mailto:chinmaypisal45@gmail.com' target='_blank' class='text-light'>
-              <i class="bi-mailbox2"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
-    <defs>
-      <filter id="marker-shape">
-        <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
-        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
-      </filter>
-    </defs>
-  </svg>
-
-  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css'>
-  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
-
-
-
-
-
-<script>
-  var cursor = {
-    delay: 8,
-    _x: 0,
-    _y: 0,
-    endX: (window.innerWidth / 2),
-    endY: (window.innerHeight / 2),
-    cursorVisible: true,
-    cursorEnlarged: false,
-    $dot: document.querySelector('.cursor-dot'),
-    $outline: document.querySelector('.cursor-dot-outline'),
-
-    init: function () {
-      // Set up element sizes
-      this.dotSize = this.$dot.offsetWidth;
-      this.outlineSize = this.$outline.offsetWidth;
-
-      this.setupEventListeners();
-      this.animateDotOutline();
-    },
-
-    //     updateCursor: function(e) {
-    //         var self = this;
-
-    //         console.log(e)
-
-    //         // Show the cursor
-    //         self.cursorVisible = true;
-    //         self.toggleCursorVisibility();
-
-    //         // Position the dot
-    //         self.endX = e.pageX;
-    //         self.endY = e.pageY;
-    //         self.$dot.style.top = self.endY + 'px';
-    //         self.$dot.style.left = self.endX + 'px';
-    //     },
-
-    setupEventListeners: function () {
-      var self = this;
-
-      // Anchor hovering
-      document.querySelectorAll('a').forEach(function (el) {
-        el.addEventListener('mouseover', function () {
-          self.cursorEnlarged = true;
-          self.toggleCursorSize();
-        });
-        el.addEventListener('mouseout', function () {
-          self.cursorEnlarged = false;
-          self.toggleCursorSize();
-        });
-      });
-
-      // Click events
-      document.addEventListener('mousedown', function () {
-        self.cursorEnlarged = true;
-        self.toggleCursorSize();
-      });
-      document.addEventListener('mouseup', function () {
-        self.cursorEnlarged = false;
-        self.toggleCursorSize();
-      });
-
-
-      document.addEventListener('mousemove', function (e) {
-        // Show the cursor
-        self.cursorVisible = true;
-        self.toggleCursorVisibility();
-
-        // Position the dot
-        self.endX = e.pageX;
-        self.endY = e.pageY;
-        self.$dot.style.top = self.endY + 'px';
-        self.$dot.style.left = self.endX + 'px';
-      });
-
-      // Hide/show cursor
-      document.addEventListener('mouseenter', function (e) {
-        self.cursorVisible = true;
-        self.toggleCursorVisibility();
-        self.$dot.style.opacity = 1;
-        self.$outline.style.opacity = 1;
-      });
-
-      document.addEventListener('mouseleave', function (e) {
-        self.cursorVisible = true;
-        self.toggleCursorVisibility();
-        self.$dot.style.opacity = 0;
-        self.$outline.style.opacity = 0;
-      });
-    },
-
-    animateDotOutline: function () {
-      var self = this;
-
-      self._x += (self.endX - self._x) / self.delay;
-      self._y += (self.endY - self._y) / self.delay;
-      self.$outline.style.top = self._y + 'px';
-      self.$outline.style.left = self._x + 'px';
-
-      requestAnimationFrame(this.animateDotOutline.bind(self));
-    },
-
-    toggleCursorSize: function () {
-      var self = this;
-
-      if (self.cursorEnlarged) {
-        self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
-        self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-      } else {
-        self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
-        self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
-      }
-    },
-
-    toggleCursorVisibility: function () {
-      var self = this;
-
-      if (self.cursorVisible) {
-        self.$dot.style.opacity = 1;
-        self.$outline.style.opacity = 1;
-      } else {
-        self.$dot.style.opacity = 0;
-        self.$outline.style.opacity = 0;
-      }
-    }
-  }
-
-  cursor.init();
-
-</script>
-
-<script>
-  $(document).ready(function () {
-    $("#news-slider").owlCarousel({
-      items: 3,
-      itemsDesktop: [1199, 3],
-      itemsDesktopSmall: [980, 2],
-      itemsMobile: [600, 1],
-      navigation: true,
-      navigationText: ["", ""],
-      pagination: true,
-      autoPlay: true,
-      autoWidth: true,
-      mouseDrag: true,
-      dots: true,
-      autoplayHoverPause: true
-    });
-
-    var texts = [
-      'Algorithms', 'AWS', 'Cybersecurity',
-      'Django', 'Selenium', 'AI',
-      'LLMs', 'RAG', 'LangChain',
-      'Nginx', 'Docker', 'Rest API'
-    ];
-
-    TagCloud('.tag_cloud', texts, {
-      // radius in px
-      radius: 300,
-    });
-  });
-</script>
-
 
 </html>
