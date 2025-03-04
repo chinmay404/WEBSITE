@@ -183,6 +183,8 @@ section {
 
 .highlight {
   color: var(--primary-color);
+  font-size: larger;
+  color:  black;
 }
 
 /* Custom Cursor */
